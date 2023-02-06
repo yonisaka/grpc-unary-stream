@@ -14,6 +14,7 @@ type note struct {
 	db *sql.DB
 }
 
+// NewNoteRepository is function to create new note repository
 func NewNoteRepository(db *sql.DB) NoteRepository {
 	return &note{db: db}
 }
