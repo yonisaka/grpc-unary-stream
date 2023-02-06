@@ -1,5 +1,6 @@
 package entity
 
+// Note is struct for note
 type Note struct {
 	ID          int64  `json:"id"`
 	Title       string `json:"title"`
