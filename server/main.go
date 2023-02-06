@@ -42,7 +42,7 @@ func registerDB() *sql.DB {
 
 	param := url.Values{}
 	param.Add("parseTime", "True")
-	// param.Add("loc", "Asia/Jakarta")
+	param.Add("loc", "Asia/Jakarta")
 
 	dsn := fmt.Sprintf("%s?%s", strConn, param.Encode())
 
