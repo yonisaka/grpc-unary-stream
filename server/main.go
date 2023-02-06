@@ -37,6 +37,7 @@ func main() {
 	}
 }
 
+// registerDB is function to connect to database
 func registerDB() *sql.DB {
 	strConn := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s", "root", "password", "localhost", "3306", "grpc_us")
 
